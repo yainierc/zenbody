@@ -58816,7 +58816,7 @@ var ScheduleProvider = (function () {
         var _this = this;
         return new Promise(function (resolve) {
             //this.http.get('http://107.180.65.249:3000/api/schedules')
-            _this.http.get('http://localhost:3000/api/schedules')
+            _this.http.get('http://192.241.155.179:3000/api/schedules')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 _this.data = data;
@@ -58827,7 +58827,7 @@ var ScheduleProvider = (function () {
     ScheduleProvider.prototype.getTimeByScheduleAndTimeId = function (scheuleId, timeId) {
         var _this = this;
         return new Promise(function (resolve) {
-            _this.http.get('http://localhost:3000/api/time/' + scheuleId + '/' + timeId)
+            _this.http.get('http://192.241.155.179:3000/api/time/' + scheuleId + '/' + timeId)
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 _this.data = data;
@@ -77451,7 +77451,7 @@ var ServicesProvider = (function () {
         var _this = this;
         return new Promise(function (resolve) {
             //this.http.get('http://107.180.65.249:3000/api/schedules')
-            _this.http.get('http://localhost:3000/api/services')
+            _this.http.get('http://192.241.155.179:3000/api/services')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 _this.data = data;
