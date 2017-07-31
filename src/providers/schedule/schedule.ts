@@ -26,7 +26,7 @@ export class ScheduleProvider {
     return new Promise(resolve => {
 
       //this.http.get('http://107.180.65.249:3000/api/schedules')
-      this.http.get('http://68.66.193.239:3000/api/schedules')      
+      this.http.get('http://192.241.155.179:3000/api/schedules')      
         .map(res => res.json())
         .subscribe(data => {
           this.data = data;
@@ -39,7 +39,7 @@ export class ScheduleProvider {
   getTimeByScheduleAndTimeId(scheuleId, timeId){
 
     return new Promise(resolve => {      
-      this.http.get('http://68.66.193.239:3000/api/time/' + scheuleId +'/'+timeId)      
+      this.http.get('http://192.241.155.179:3000/api/time/' + scheuleId +'/'+timeId)      
         .map(res => res.json())
         .subscribe(data => {
           this.data = data;
